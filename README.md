@@ -10,6 +10,9 @@ Also it is used to convert the currencies value:
 * Dollars into Shekels
 * Shekels into Euros
 * Euros into Shekels
+## The wireframe
+![wireframe](https://user-images.githubusercontent.com/81920670/130170987-44ff7867-fee6-44d4-b619-ce588a6d097b.PNG)
+
 ## The Technologies that are used:
 * HTML5
 * CSS
