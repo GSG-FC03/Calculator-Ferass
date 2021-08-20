@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <script src="main.js"></script>   
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <!-- The main container -->
+    <main class="container">
+        <!-- The display div -->
+      <header>
+        <div class="operation-screen"></div>
+        <div class="result-screen"></div>
+      </header></div> <hr style="background-color: black;">
+      <!-- The section of buttons -numbers and operation signs- -->
+
+      <!-- The operation signs section -->
+      <section class="button-bar">
+        <div class="operation-signs" style="margin-top: 10px;">
+          <button><i class="operation fas fa-plus"></i></button>
+          <button><i class="operation fas fa-minus"></i></button>
+          <button><i class="operation fas fa-times"></i>
+          </button>
+          <button><i class="operation fas fa-divide"></i></button>
+          <button><i class="operation fas fa-backspace"></i>
+          </button>
+        </div> <hr style="background-color: black;">
+        <!-- Numbers Section -->
+        <div class="numbers">
+          <button class="numbers number1">1</button>
+          <button class="numbers number2">2</button>
+          <button class="numbers number3">3</button>
+          <button class="numbers number4">4</button>
+          <button class="numbers number5">5</button>
+          <button class="numbers number6">6</button>
+          <button class="numbers number7">7</button>
+          <button class="numbers number8">8</button>
+          <button class="numbers number9">9</button>
+          <button class="numbers number0">0</button>
+        </div>
+      </section><hr style="background-color: black;">
+      
+      <!-- The section of Conversion, also have equal & clear button -->
+      <footer class="convertClearEqual">
+          <!-- The section of conversion -->
+        <section class="rate">
+            <div>
+                <p class="ilsToUSD">ILS & USD</p>
+                <button>
+                    <i class="fas fa-shekel-sign"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-dollar-sign"></i>
+                </button>
+                <button>
+                    <i class="fas fa-dollar-sign">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-shekel-sign"></i>
+                </i></button>
+            </div>
+            <div class="ilsToEur">
+                <p class="ilsToEur"> ILS & EUR</p>
+                <button>
+                    <i class="fas fa-shekel-sign"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-euro-sign"></i>
+                </button>
+                <button>
+                    <i class="fas fa-euro-sign"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-shekel-sign"></i>
+                </button>
+            </div>
+        </section>
+        <!-- The section of clear & equal button-->
+        <section class="equalClear">
+            <button><i class="fas fa-equals"></i></button>
+            <button>CLEAR</button>
+        </section>
+    </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
