@@ -7,21 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
       <!-- The main container -->
     <main class="container">
         <!-- The display div -->
-      <header>
+      <header class="display-screen">
         <div class="operation-screen"></div>
         <div class="result-screen"></div>
       </header></div> <hr style="background-color: black;">
@@ -29,27 +28,27 @@
 
       <!-- The operation signs section -->
       <section class="button-bar">
-        <div class="operation-signs" style="margin-top: 10px;">
-          <button><i class="operation fas fa-plus"></i></button>
-          <button><i class="operation fas fa-minus"></i></button>
-          <button><i class="operation fas fa-times"></i>
+        <div class="operation-signs">
+          <button class="operation"><i class="fas fa-plus"></i></button>
+          <button class="operation"><i class="fas fa-minus"></i></button>
+          <button class="operation"><i class="fas fa-times"></i>
           </button>
-          <button><i class="operation fas fa-divide"></i></button>
-          <button><i class="operation fas fa-backspace"></i>
+          <button class="operation"><i class="fas fa-divide"></i></button>
+          <button class="bkBtn"><i class="fas fa-backspace"></i>
           </button>
         </div> <hr style="background-color: black;">
         <!-- Numbers Section -->
         <div class="numbers">
-          <button class="numbers number1">1</button>
-          <button class="numbers number2">2</button>
-          <button class="numbers number3">3</button>
-          <button class="numbers number4">4</button>
-          <button class="numbers number5">5</button>
-          <button class="numbers number6">6</button>
-          <button class="numbers number7">7</button>
-          <button class="numbers number8">8</button>
-          <button class="numbers number9">9</button>
-          <button class="numbers number0">0</button>
+          <button class="number number1">1</button>
+          <button class="number number2">2</button>
+          <button class="number number3">3</button>
+          <button class="number number4">4</button>
+          <button class="number number5">5</button>
+          <button class="number number6">6</button>
+          <button class="number number7">7</button>
+          <button class="number number8">8</button>
+          <button class="number number9">9</button>
+          <button class="number number0">0</button>
         </div>
       </section><hr style="background-color: black;">
       
@@ -57,37 +56,45 @@
       <footer class="convertClearEqual">
           <!-- The section of conversion -->
         <section class="rate">
-            <div>
-                <p class="ilsToUSD">ILS & USD</p>
-                <button>
+            <div class="ilsToUSD">
+                <p class="ilsUSD" style="margin-bottom: 3px;">ILS & USD</p>
+                <button class="from-ILS-To-USD">
+                    <div class="signs">
                     <i class="fas fa-shekel-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-dollar-sign"></i>
+                </div>
                 </button>
-                <button>
-                    <i class="fas fa-dollar-sign">
+                <button class="from-USD-To-ILS">
+                    <div class="signs">
+                    <i class="fas fa-dollar-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-shekel-sign"></i>
-                </i></button>
+                </div>
+            </button>
             </div>
             <div class="ilsToEur">
-                <p class="ilsToEur"> ILS & EUR</p>
-                <button>
+                <p class="ilsEur" style="margin-bottom: 3px;"> ILS & EUR</p>
+                <button class="from-ILS-To-EUR">
+                    <div class="signs">
                     <i class="fas fa-shekel-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-euro-sign"></i>
+                </div>
                 </button>
-                <button>
+                <button class="from-EUR-To-ILS">
+                    <div class="signs">
                     <i class="fas fa-euro-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-shekel-sign"></i>
+                </div>
                 </button>
             </div>
         </section>
         <!-- The section of clear & equal button-->
         <section class="equalClear">
-            <button><i class="fas fa-equals"></i></button>
-            <button>CLEAR</button>
+            <button class="equal"><i class="fas fa-equals"></i></button>
+            <button class="clear">CLEAR</button>
         </section>
     </footer>
     </main>
