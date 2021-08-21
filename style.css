@@ -1,0 +1,145 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+button{
+ border: none;
+}
+.display-screen{
+    height: 151px;
+    background-color: #3C3939;
+}
+.button-bar{
+    background-color: #666161;
+}
+.operation-signs{
+    height: 67px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.numbers{
+    height: 377px;
+}
+.operation{
+    width:39.81px;
+    height: 41.87px;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+}
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.number{
+    width:107.95px;
+    height: 82.01px;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    margin: 5px 5px 5px 5px;
+    font-size: 25px;
+}
+.fa-backspace{
+    font-size: 25px;
+    background-color: #C4C4C4;
+}
+.bkBtn{
+    width:81px;
+    height: 42px;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+}
+.convertClearEqual{
+    background-color: #DBD4D4;
+    height: 217px;
+    display: flex;
+    justify-content: space-around;
+}
+.from-ILS-To-EUR{
+    background-color: #A8A2A2;
+    width: 138px;
+    height: 30px;
+    border-radius: 155px;
+    margin-bottom: 7px;
+}
+.from-EUR-To-ILS{
+    background-color: #A8A2A2;
+    width: 138px;
+    height: 30px;
+    border-radius: 155px;
+}
+.from-ILS-To-USD{
+    background-color: #A8A2A2;
+    width: 138px;
+    height: 30px;
+    border-radius: 155px;
+    margin-bottom: 7px;
+}
+.from-USD-To-ILS{
+    background-color: #A8A2A2;
+    width: 138px;
+    height: 30px;
+    border-radius: 155px;
+}
+.fa-euro-sign{
+    transform: scale(1.5, 1.5);
+    opacity: 50%;
+}
+.fa-shekel-sign{
+    transform: scale(1.3, 1.3); 
+    opacity: 50%;
+}
+.fa-dollar-sign{
+    transform: scale(1.2, 1.2); 
+    opacity: 50%;
+}
+.fa-long-arrow-alt-right{
+    transform: scale(2, 1);
+    opacity: 50%;
+}
+.ilsToEur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ilsToUSD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.signs{
+    display: flex;
+    justify-content: space-around;
+}
+.equalClear{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 32px;
+}
+.equal{
+    width: 112px;
+    height: 49px;
+    background-color: green;
+    border-color:forestgreen;
+    opacity: 80%;
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    border-radius: 15px;
+}
+.clear{
+    width: 112px;
+    height: 49px;
+    background-color: red;
+    border-color: tomato;
+    opacity: 80%;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
