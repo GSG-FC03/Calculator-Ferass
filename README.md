@@ -2,7 +2,7 @@
 The one who created this app: [Ferass Mohana](https://github.com/ferassmohana)
 ## Links:
 * [Figma Link](https://www.figma.com/file/qN5ZD23bGBILwIqjHv6sen/Untitled?node-id=2%3A2)
-* [Demo Link]()
+* [Demo Link](https://gsg-fc03.github.io/Calculator-Ferass/)
 ## The description:
 This is app created for doing simple calculations like addition, subtraction , division, and multiplication.<br>
 Also it is used to convert the currencies value: 
