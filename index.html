@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculatore</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -20,35 +20,34 @@
       <!-- The main container -->
     <main class="container">
         <!-- The display div -->
-      <header class="display-screen">
-        <div class="operation-screen"></div>
-        <div class="result-screen"></div>
+      <header class="display-screen" style="display: flex; flex-direction: column; border: none;">
+        <input class="operation-screen" style="height: 50%; font-size: 25px;" placeholder="Claculations results">
+        <input class="conversion-screen" style="height: 50%; font-size: 25px;" placeholder="The conversion results">
       </header></div> <hr style="background-color: black;">
       <!-- The section of buttons -numbers and operation signs- -->
-
+      <section class="mini-container">
       <!-- The operation signs section -->
       <section class="button-bar">
         <div class="operation-signs">
-          <button class="operation"><i class="fas fa-plus"></i></button>
-          <button class="operation"><i class="fas fa-minus"></i></button>
-          <button class="operation"><i class="fas fa-times"></i>
-          </button>
-          <button class="operation"><i class="fas fa-divide"></i></button>
-          <button class="bkBtn"><i class="fas fa-backspace"></i>
-          </button>
+          <input type="button" value="+" class="sign">
+          <input type="button" value="-" class="sign">
+          <input type="button" value="X" class="sign">
+          <input type="button" value="÷" class="sign">
         </div> <hr style="background-color: black;">
         <!-- Numbers Section -->
         <div class="numbers">
-          <button class="number number1">1</button>
-          <button class="number number2">2</button>
-          <button class="number number3">3</button>
-          <button class="number number4">4</button>
-          <button class="number number5">5</button>
-          <button class="number number6">6</button>
-          <button class="number number7">7</button>
-          <button class="number number8">8</button>
-          <button class="number number9">9</button>
-          <button class="number number0">0</button>
+          <input type="button" value="1" class="number">
+          <input type="button" value="2" class="number">
+          <input type="button" value="3" class="number">
+          <input type="button" value="4" class="number">
+          <input type="button" value="5" class="number">
+          <input type="button" value="6" class="number">
+          <input type="button" value="7" class="number">
+          <input type="button" value="8" class="number">
+          <input type="button" value="9" class="number">
+          <input type="button" value="0" class="number">
+          <input type="button" value="." class="point" id="point">
+        <!--Signs, clear, and equal buttons-->
         </div>
       </section><hr style="background-color: black;">
       
@@ -58,14 +57,14 @@
         <section class="rate">
             <div class="ilsToUSD">
                 <p class="ilsUSD" style="margin-bottom: 3px;">ILS & USD</p>
-                <button class="conv from-ILS-To-USD">
+                <button class="conv from-ILS-To-USD" value="nisUsd">
                     <div class="signs">
                     <i class="fas fa-shekel-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-dollar-sign"></i>
                 </div>
                 </button>
-                <button class="conv from-USD-To-ILS">
+                <button class="conv from-USD-To-ILS" value="usdNis">
                     <div class="signs">
                     <i class="fas fa-dollar-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
@@ -75,14 +74,14 @@
             </div>
             <div class="ilsToEur">
                 <p class="ilsEur" style="margin-bottom: 3px;"> ILS & EUR</p>
-                <button class="conv from-ILS-To-EUR">
+                <button class="conv from-ILS-To-EUR" value="nisEur">
                     <div class="signs">
                     <i class="fas fa-shekel-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     <i class="fas fa-euro-sign"></i>
                 </div>
                 </button>
-                <button class="conv from-EUR-To-ILS">
+                <button class="conv from-EUR-To-ILS" value="eurNis">
                     <div class="signs">
                     <i class="fas fa-euro-sign"></i>
                     <i class="fas fa-long-arrow-alt-right"></i>
@@ -93,10 +92,11 @@
         </section>
         <!-- The section of clear & equal button-->
         <section class="equalClear">
-            <button class="equal"><i class="fas fa-equals"></i></button>
-            <button class="clear">CLEAR</button>
+            <input type="button" class="equal" value="=" id="equal">
+            <input type = "button" class="clear" value="AC" id="clear">
         </section>
     </footer>
+  </section>
     </main>
     <script src="main.js"></script>
   </body>
