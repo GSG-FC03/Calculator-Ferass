@@ -23,14 +23,14 @@ button:hover {
   justify-content: space-around;
   align-items: center;
 }
-.operation {
+.sign {
   width: 39.81px;
   height: 41.87px;
   border-radius: 15px;
   background-color: #c4c4c4;
-  font-size: 16px;
+  font-size: 15px;
 }
-.operation:hover {
+.sign:hover {
   background-color: #c9cfff;
   transition-duration: 0.1s;
 }
@@ -42,8 +42,16 @@ button:hover {
   height: 377px;
 }
 .number {
-  width: 107.95px;
-  height: 82.01px;
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #c4c4c4;
+  margin: 5px 5px 5px 5px;
+  font-size: 25px;
+}
+#point {
+  width: 110px;
+  height: 40px;
   border-radius: 15px;
   background-color: #c4c4c4;
   margin: 5px 5px 5px 5px;
@@ -68,9 +76,9 @@ button:hover {
 }
 .convertClearEqual {
   background-color: #dbd4d4;
-  height: 217px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-bottom: 35px;
 }
 .rate {
@@ -83,8 +91,8 @@ button:hover {
   border-radius: 155px;
   margin-bottom: 7px;
 }
-.conv:hover{
-    background-color: #86868b;
+.conv:hover {
+  background-color: #86868b;
 }
 .fa-euro-sign {
   transform: scale(1.5, 1.5);
@@ -123,7 +131,7 @@ button:hover {
   margin-left: 5rem;
   margin-top: 32px;
 }
-.equal {
+#equal {
   width: 112px;
   height: 49px;
   background-color: green;
@@ -134,7 +142,7 @@ button:hover {
   margin-bottom: 14px;
   border-radius: 15px;
 }
-.clear {
+#clear {
   width: 112px;
   height: 49px;
   background-color: red;
@@ -143,57 +151,63 @@ button:hover {
   font-size: 24px;
   border-radius: 15px;
 }
-.equal:hover{
-    background-color:green;
-    opacity: 100%;
+#equal:hover {
+  background-color: green;
+  opacity: 100%;
 }
-.clear:hover{
-  background-color:red;
+#clear:hover {
+  background-color: red;
   opacity: 100%;
 }
 
-
-
 /* Media query for Tablets */
 @media screen and (min-width: 768px) {
-  .numbers {
+  .mini-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 160px;
+    height: 31.1rem;
+  }
+  .numbers {
+    width: 20em;
+    display: flex;
+    flex-wrap: wrap;
   }
   .number {
+    width: 90px;
+    height: 40px;
+  }
+  #point {
     width: 130px;
     height: 40px;
+    font-size: 25px;
   }
   .number:hover {
     background-color: #c9cfff;
     transition-duration: 0.1s;
   }
-  .operation{
+  .sign {
     width: 60.81px;
     height: 41.87px;
-    font-size: 16px;
+    font-size: 25px;
   }
   .rate {
     display: flex;
+    flex-direction: column;
     margin-top: 1.5rem;
+    margin-left: 30px;
   }
   .ilsToUSD {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 5rem;
   }
   .conv {
     background-color: #a8a2a2;
-    width: 160px;
+    width: 150px;
     height: 50px;
     border-radius: 155px;
   }
   .conv:hover {
     background-color: #86868b;
-    width: 161px;
     transition-duration: 0.1s;
   }
   .fa-euro-sign {
@@ -216,54 +230,68 @@ button:hover {
     display: flex;
     flex-direction: column;
     margin-left: 5rem;
-    margin-top: 23px;
+    margin-top: 0px;
+  }
+  .button-bar{
+    width: 60%;
   }
   .convertClearEqual {
-    background-color: #dbd4dF;
-    height: 217px;
+    width: 50%;
+    background-color: #dbd4df;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
-  .equal:hover{
-      background-color:green;
-      opacity: 100%;
-  }
-  .clear:hover{
-    background-color:red;
+  .equal:hover {
+    background-color: green;
     opacity: 100%;
   }
-  .ilsEur{
+  .clear:hover {
+    background-color: red;
+    opacity: 100%;
+  }
+  .ilsEur {
     font-size: 26px;
     opacity: 80%;
   }
-  .ilsUSD{
+  .ilsUSD {
     font-size: 26px;
     opacity: 80%;
   }
 }
 /* Media qeury for Laptop*/
 @media screen and (min-width: 1024px) {
-    .operation{
-        width: 88.81px;
-        height: 48.87px;
-    }
-    .bkBtn{
-        width: 120px;
-    }
-    .convertClearEqual {
-        background-color: #dbd4dF;
-        height: 217px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .numbers{
-        height: 180px;
-    }
-    .number {
-        width: 160px;
-        height: 50px;
-      }
-      .operation-signs{
-        justify-content: space-evenly;
-      }
+  .mini-container {
+    display: flex;
+    height: 31.45rem;
+  }
+  .sign {
+    width: 88.81px;
+    height: 48.87px;
+    font-size: 28px;
+  }
+  .bkBtn {
+    width: 120px;
+  }
+  .convertClearEqual {
+    background-color: #dbd4df;
+    display: flex;
+    justify-content: space-around;
+  }
+  .numbers {
+    width: 610px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .number {
+    width: 12rem;
+    height: 50px;
+  }
+  #point {
+    width: 160px;
+    height: 50px;
+    font-size: 28px;
+  }
+  .operation-signs {
+    justify-content: space-around;
+  }
 }
